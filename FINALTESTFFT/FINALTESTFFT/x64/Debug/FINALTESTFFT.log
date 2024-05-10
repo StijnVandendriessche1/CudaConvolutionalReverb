@@ -1,0 +1,26 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (FINALTESTFFT.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -IC:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\fftw\include -I"C:\Users\stijn\source\repos\FINALTESTFFT\packages\libsndfile-msvc-x64.1.0.27.9910\build\native\../..//build/native/include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DHAS_libsndfile -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc142.pdb" -o C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\x64\Debug\kernel.cu.obj "C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu" 
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(17): warning #177-D: variable "mmioInfo1" was declared but never referenced
+        MMIOINFO mmioInfo1, mmioInfo2;
+                 ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(17): warning #177-D: variable "mmioInfo2" was declared but never referenced
+        MMIOINFO mmioInfo1, mmioInfo2;
+                            ^
+  
+  kernel.cu
+  tmpxft_00006a58_00000000-7_kernel.cudafe1.cpp
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(17): warning C4101: 'mmioInfo2': unreferenced local variable
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(17): warning C4101: 'mmioInfo1': unreferenced local variable
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(88): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(139): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(228): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\stijn\source\repos\FINALTESTFFT\FINALTESTFFT\kernel.cu(237): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+     Creating library C:\Users\stijn\source\repos\FINALTESTFFT\x64\Debug\cpuFFTConv.lib and object C:\Users\stijn\source\repos\FINALTESTFFT\x64\Debug\cpuFFTConv.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  FINALTESTFFT.vcxproj -> C:\Users\stijn\source\repos\FINALTESTFFT\x64\Debug\cpuFFTConv.exe
+  0 File(s) copied
